@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="index.js"></script>
+        <title>Prueba FastApi</title>
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
+    </head>
+
+    <body>
+        <h1>Recibiendo Api</h1>
+        <!-- Indicadores Totales-->
+        <p>Indicadores:</p>
+        <div id="demo"></div>
+
+        <br>
+            <div id="form">
+                <select id="options" name="rango">
+                    <option value="0">-Seleccione-</option>
+                    <option value="total">Total</option>
+                    <option value="mensuales">Mensual</option>
+                    <option value="diarios">Diaria</option>
+                    <option value="NoExiste">Fallo en FastApi</option>
+                </select>
+                <input type="date" id="fecha" value="2022-01-01" min="2019-12-31" max="2023-01-01">
+            </div>
+        <button onclick="elije_direccion(form)">Buscar</button>
+        <br>
+        <br>
+        Fechas disponibles: <br>
+        2202-01 con 1 resultado. <br>        
+        2202-02 con 2 resultado. <br>
+        2202-03 con 1 resultado. <br>
+        2202-04 con 1 resultado. <br>
+<!--value="2022-01-01" min="2019-12-31" max="2023-01-01"-->
+
+    </body>
+
+</html>
